@@ -443,7 +443,7 @@ class NagiosHarder
 
       last_host = nil
       rows.each do |row|
-        columns = row.css('td').to_a
+        columns = row.css('> td').to_a
         if columns.any?
 
           # Host column
