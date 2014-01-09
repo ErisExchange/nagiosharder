@@ -526,7 +526,7 @@ class NagiosHarder
           debug 'parsed attempts column'
 
           # Status info
-          status_info = columns[6].inner_html.gsub('&nbsp;', '').gsub("\302\240", '') if columns[6]
+          status_info = columns[6].inner_html.gsub('&nbsp;', '') if columns[6]
           debug 'parsed status info column'
 
 
